@@ -7,7 +7,7 @@ pipeline{
                 git url: 'https://github.com/teja-yadavnew/node-todo-cicd.git', branch: 'master'
             }
         }
-        stage('build and test'){
+        stage('build and testing'){
             steps{
                 sh 'docker build . -t velpulateja1998701/node-todo-app-cicd:latest'
             }
